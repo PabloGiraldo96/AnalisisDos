@@ -1,0 +1,20 @@
+.banner{
+    background-image: url("/assets/img/copia.png");
+    background-position: top center;
+    background-size: cover;
+    padding: 25%;
+    background-attachment: fixed;
+}
+.menu{
+    background-color: transparent;
+    opacity: 0.9;
+
+}
+
+.banner2{
+    background-image: url("/assets/img/img2.png");
+    background-position: top center;
+    background-size: cover;
+    padding: 25%;
+    background-attachment: fixed;
+}
