@@ -1,6 +1,6 @@
 def crearTabla(dataFrame, nombretabla): 
     archivoHTML = dataFrame.to_html()
-    archivo = open(f"./tables/{nombretabla}.html", "w")
+    archivo = open(f"./tables/{nombretabla}.html", "w", encoding="utf-8")
     archivo.write('''
     <!DOCTYPE html>
     <html>
