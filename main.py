@@ -23,8 +23,8 @@ empleadosJovenes = tabla3.query('edad <= 30')
 
 promedio_analistas1 = tabla3.query('cargo == "analista1"')['salario'].mean()
 
-limpiado = empleadosJovenes.isna("-")
-limpiado = empleadosJovenes.isin("-")
+#limpiado = empleadosJovenes.isna("-")
+#limpiado = empleadosJovenes.isin("-")
 
 
 
@@ -34,16 +34,16 @@ print(promedio_analistas1)
 print(f"El promedio de salarios es: {promedio_analistas1}")
 
 
-# Generacion de tablas 
+ #Generacion de tablas 
 
-# crearTabla(analistas1, "analistas 1")
-# crearTabla(analistas2, "analistas 2")
-# crearTabla(empleadosMayores, "Jubilados")
-# crearTabla(empleadosJovenes, "Jovenes")
+crearTabla(analistas1, "analistas 1")
+crearTabla(analistas2, "analistas 2")
+crearTabla(empleadosMayores, "Jubilados")
+crearTabla(empleadosJovenes, "Jovenes")
 
-# Generacion de graficas
+ #Generacion de graficas
 
-# graficar_salario(empleadosMayores, 'cargo', 'salario', 'PromedioSalarios') 
+graficar_salario(empleadosMayores, 'cargo', 'salario', 'PromedioSalarios') 
 
-# graficarTorta(analistas1, [20, 30, 40, 50, 60], 'edad', 'salario', 'promediosAnalistasUno')
+graficarTorta(analistas1, [20, 30, 40, 50, 60], 'edad', 'salario', 'promediosAnalistasUno')
 
